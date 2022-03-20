@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moja pierwsza strona</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new_template.css') }}">
+    <link rel="czcionka" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="icon" href="{{url_for('static', filename='images/kubus.png') }}">
+</head>
+<body>
+    <nav class="topnav"> 
+        <a class="active" href="{{url_for('index') }}">Home</a>
+        <a href="{{ url_for('bmi') }}">BMI</a>
+        <a href="{{ url_for('date') }}">date</a>  
+        <a href="{{ url_for('generator') }}">password generator</a>  
+        <a href="{{ url_for('kamien') }}">rock paper scissors</a>  
+    </nav> 
+    <br><br><br><br><br>
+    <div style="text-align:center">
+        <h1>no cześć :D</h1>
+    </div>
+</body>
+</html>

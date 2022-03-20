@@ -1,0 +1,50 @@
+.data{
+    width: 50%;
+    margin: 100px auto 10px auto;
+    font-size: larger;
+    text-align: center;
+}
+
+.artykul{
+    width: 50%;
+    float: right;
+    margin: 1.5px 0
+}
+button.menu{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.czytdalej:hover{
+    color:blue;
+}
+
+.wstecz{
+    letter-spacing: 3.5px;
+    line-height: 160%;
+    text-align: center;
+
+}
+.wstecz:hover{
+    background-color: lightcoral;
+}
+.guziki{
+    text-align: center;
+}
+.obrazek{
+    float:left;
+    width:200px;
+    margin-right: 10px;
+}
+
+button{
+    background-color: brown;
+    border: 2px solid black;
+    margin: 1px;
+}
+.footer{
+    text-align: center;
+}

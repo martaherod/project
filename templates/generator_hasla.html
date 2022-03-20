@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new_template.css') }}">
+</head>
+<body>
+    <nav class="topnav"> 
+        <a class="active" href="{{url_for('index') }}">Home</a>
+        <a href="{{ url_for('bmi') }}">BMI</a>
+        <a href="{{ url_for('date') }}">date</a> 
+        <a href="{{ url_for('generator') }}">password generator</a>  
+        <a href="{{ url_for('kamien') }}">rock paper scissors</a>  
+    </nav> 
+    <!-- safe password should contain at least 8 characters -->
+    <br><br><br><br><br>
+    <div style="text-align:center">
+        <form action="/generator" method="POST">
+            <h4>Number of characters in your password: <input type="text" name = "number" placeholder="Enter number of characters" required> </h4>
+            <button type="submit" value="submit">Generate password</button>
+        </form>
+        <h1 id="copy">{{ passw }}</h1>
+        <button id="bitton" type="button" onclick="copyEvent('copy')">Copy password</button>
+    </div>
+
+    <script>
+        function copyEvent(id)
+        {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy");
+        }
+    </script>
+    
+    <br>
+</body>
+</html>
