@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <title>Kamien/papier/nozyce</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/new_template.css') }}">
     <meta name="description" content="Najlepsza strona na świecie">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -9,11 +10,11 @@
 
 <body>
     <nav class="topnav"> 
-        <a class="active" href="{{url_for('index') }}">Home</a>
+        <a href="{{url_for('index') }}">Home</a>
         <a href="{{ url_for('bmi') }}">BMI</a>
         <a href="{{ url_for('date') }}">date</a>    
         <a href="{{ url_for('generator') }}">password generator</a>  
-        <a href="{{ url_for('kamien') }}">rock paper scissors</a>  
+        <a class="active" href="{{ url_for('kamien') }}">rock paper scissors</a>  
     </nav> 
     <br><br><br><br><br>
     <h1 style="text-align:center">Let's play game</h1>
