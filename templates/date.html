@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data</title>
+    <title>data</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/new_template.css') }}">
 </head>
 <body>
     <nav class="topnav"> 
-        <a class="active" href="{{url_for('index') }}">Home</a>
+        <a href="{{url_for('index') }}">Home</a>
         <a href="{{ url_for('bmi') }}">BMI</a>
-        <a href="{{ url_for('date') }}">date</a>   
+        <a class="active" href="{{ url_for('date') }}">date</a>   
         <a href="{{ url_for('generator') }}">password generator</a>
         <a href="{{ url_for('kamien') }}">rock paper scissors</a>   
     </nav> 

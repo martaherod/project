@@ -13,8 +13,7 @@ def gra(user_input):
     cond =[user_input=="paper" and comp_input=="rock",
     user_input=="rock" and comp_input=="scissors",
     user_input=="scissors" and comp_input=="paper"]
-    win = any(cond) # sprawdza czy którakolwiek równa się True
-    # wygrana = all(cond) sprawdza czy wszystko to true
+    win = any(cond)
 
     result = ""
     if user_input==comp_input:
