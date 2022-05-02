@@ -43,4 +43,4 @@ def date():
     return render_template("date.html", text=content)
 
 if __name__=="__main__":
-    app.run(debug =True)
+    app.run()
