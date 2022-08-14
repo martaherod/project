@@ -42,5 +42,9 @@ def date():
     content=date_now()
     return render_template("date.html", text=content)
 
+@app.route("/turecki")
+def turecki():
+    return render_template("turecki.html")
+
 if __name__=="__main__":
     app.run()

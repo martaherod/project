@@ -24,7 +24,7 @@ def gra(user_input):
         result = "You entered wrong data :( try again"
         descr = ""
     else:
-        result = "You loose :(("
+        result = "You lose :(("
     
     return f"{descr} {result}"
 
